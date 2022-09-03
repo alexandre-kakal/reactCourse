@@ -11,7 +11,7 @@ const ExpenseForm = (props) => {
     enteredDate: "",
   }); */
 
-  const titleChangeHander = (event) => {
+  const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
     /* setEnteredInput({
       ...enteredInput,
@@ -19,7 +19,7 @@ const ExpenseForm = (props) => {
     }); */
   };
 
-  const amountChangeHander = (event) => {
+  const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
 
     //setEnteredInput({
@@ -32,7 +32,7 @@ const ExpenseForm = (props) => {
     }); */
   };
 
-  const dateChangeHander = (event) => {
+  const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
     /* setEnteredInput({
       ...enteredInput,
@@ -61,7 +61,7 @@ const ExpenseForm = (props) => {
           <input
             type="text"
             value={enteredTitle}
-            onChange={titleChangeHander}
+            onChange={titleChangeHandler}
           ></input>
         </div>
         <div className="new-expense__control">
@@ -71,7 +71,7 @@ const ExpenseForm = (props) => {
             min="0.01"
             step="0.01"
             value={enteredAmount}
-            onChange={amountChangeHander}
+            onChange={amountChangeHandler}
           ></input>
         </div>
         <div className="new-expense__control">
@@ -81,7 +81,7 @@ const ExpenseForm = (props) => {
             min="2019-01-01"
             max="2023-12-31"
             value={enteredDate}
-            onChange={dateChangeHander}
+            onChange={dateChangeHandler}
           ></input>
         </div>
       </div>
